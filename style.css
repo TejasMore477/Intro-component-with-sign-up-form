@@ -38,6 +38,11 @@ main{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.pack{
+    height: 100%;
+    width: 100%;
     display: flex;
 }
 
@@ -190,7 +195,8 @@ form p span{
 }
 
 .attribution{ 
-    font-size: 11px; text-align: center; 
+    font-size: 14px; 
+    text-align: center; 
 }
 
 .attribution a{ 
