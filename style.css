@@ -64,8 +64,129 @@ main{
 
 .right{
     height: 100%;
-    width: 50%;
-    background-color: pink;
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.right .top{
+    padding: 1rem 0;
+    background-color: var(--Blue);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.top h2{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.top h2 span{
+    color: var(--Grayish-Blue);
+}
+
+.bottom{
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.form{
+    height:100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    gap: 0.7rem;
+}
+
+.form-control{
+    position: relative;
+}
+
+.form-control input{
+    width: 100%;
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    border: 1px solid var(--Grayish-Blue);
+    outline: none;
+}
+
+.form-control input:focus{
+    outline: none;
+    border: 1px solid black;
+}
+
+.form-control img{
+    position: absolute;
+    top: 14%;
+    right: 3%;
+    visibility: hidden;
+}
+
+/*error class*/
+.form-control.error img{
+    visibility: visible;
+}
+
+.form-control p{
+    text-align: end;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--Red);
+    visibility: hidden;
+}
+
+/*error class*/
+.form-control.error p{
+    visibility: visible;
+}
+
+
+/*success class*/
+.form-control.success input{
+    border: 1px solid var(--Green);
+}
+
+/*error class*/
+.form-control.error input{
+    border: 1px solid var(--Red);
+}
+
+.btn{
+    background-color: var(--Green);
+    border: none;
+    padding: 1rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.btn:hover{
+    background-color: hsl(154, 77%, 71%);
+}
+
+form p{
+    color: var(--Grayish-Blue);
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+form p span{
+    font-weight: 500;
+    color: var(--Red);
+    cursor: pointer;
 }
 
 .attribution{ 
